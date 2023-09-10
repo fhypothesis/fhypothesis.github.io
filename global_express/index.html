@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/2d6d92416f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Global Express :: Hello World</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <span>
+            <!-- <i class="fa-solid fa-earth-americas"></i> -->
+            <a href="#">Global Express</a>
+          </span>
+        </div>
+        <div class="navbar__menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Bookings</a></li>
+          </ul>
+        </div>
+        <div class="navbar__icons">
+          <a><i class="fa-brands fa-twitter"></i></a>
+          <a><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a class="navbar__toogleBtn" href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./images/bali_boy.jpg" /></div>
+          <div class="swiper-slide"><img src="./images/bali_dance.jpg" /></div>
+          <div class="swiper-slide">
+            <img src="./images/m-o-e-JoxepWVTrNE-unsplash.jpg" />
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="content">
+        <div class="context-text">
+          <p class="title">The World in Your Pocket</p>
+          <p class="sub-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolores
+            corrupti rerum obcaecati vero perferendis consequuntur neque.
+            Tempora est accusamus non! Culpa a non nobis odio eius? Voluptates,
+            cupiditate ex.
+          </p>
+        </div>
+
+        <!-- 첫번째 캐러셀 박스 줄 -->
+        <div class="fir-carusel-wrapper">
+          <div class="fir-carusel-left">
+            <div class="carusel-img">
+              <img src="./images/bail_green.jpg" alt="발리 정경" />
+            </div>
+            <input type="button" class="carusel-Btn" value="careers" />
+            <div class="fir-carusel-left-text">
+              <div class="carusel-text-tit">
+                The Banking jobs: Cybersecurity, a key area of expertise for
+                securing the digital experience of our customes
+              </div>
+              <div class="carusel-text-sub">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                cumque, quam et assumenda quaerat nihil dolore velit nesciunt
+                nisi ipsum quos reprehenderit.
+              </div>
+              <div class="carusel-text-date">29.09.2021</div>
+            </div>
+          </div>
+          <div class="fir-carusel-right">
+            <div class="carusel-img">
+              <img src="./images/bail_mask.jpg" alt="발리 마스크" />
+            </div>
+            <input type="button" class="carusel-Btn" value="group" />
+            <div class="fir-carusel-left-text">
+              <div class="carusel-text-tit">
+                Real esate continues to boost its sustainable action
+              </div>
+              <div class="carusel-text-sub">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                cumque, quam et assumenda quaerat nihil.
+              </div>
+              <div class="carusel-text-date">18.10.2021</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 두번째 캐러셀 박스 줄 -->
+        <div class="sec-carusel-wrapper">
+          <div class="sec-carusel-left">
+            <div class="carusel-img">
+              <img src="./images/bali_child.jpg" alt="발리 마스크" />
+            </div>
+            <input type="button" class="carusel-Btn" value="group" />
+            <div class="fir-carusel-left-text">
+              <div class="carusel-text-tit">
+                Real esate continues to boost its sustainable action
+              </div>
+              <div class="carusel-text-sub">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                cumque, quam et assumenda quaerat nihil.
+              </div>
+              <div class="carusel-text-date">18.10.2021</div>
+            </div>
+          </div>
+
+          <div class="sec-carusel-right">
+            <div class="carusel-img">
+              <i class="fa-regular fa-circle-play"></i>
+              <img src="./images/bail_sijang.jpg" alt="발리 정경" />
+            </div>
+            <input type="button" class="carusel-Btn" value="group" />
+            <div class="fir-carusel-left-text">
+              <div class="carusel-text-tit">
+                The Banking jobs: Cybersecurity, a key area of expertise for
+                securing the digital experience of our customes
+              </div>
+              <div class="carusel-text-sub">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                cumque, quam et assumenda quaerat nihil dolore velit nesciunt
+                nisi ipsum quos reprehenderit.
+              </div>
+              <div class="carusel-text-date">29.09.2021</div>
+            </div>
+          </div>
+        </div>
+        <!-- sec-carusel-wrapper -->
+
+        <!-- 세번째 캐러셀 박스 줄 -->
+        <div class="tir-carusel-wrapper">
+          <div class="tir-carusel-box-wrapper">
+            <div class="tir-carusel-box">
+              <div class="tir-carusel-box-item">
+                <div class="tir-carusel-box-next-Btn">
+                  <i class="fa-regular fa-circle-right"></i>
+                </div>
+                <input type="button" class="carusel-Btn-ver2" value="crs" />
+                <div class="tir-carusel-box-tit">
+                  <p>Investing your savings responsibly</p>
+                </div>
+              </div>
+            </div>
+            <!-- tir-carusel-box -->
+            <img src="./images/bail_beach.jpg" alt="" />
+          </div>
+
+          <div class="tir-carusel-box-wrapper">
+            <div class="tir-carusel-box">
+              <div class="tir-carusel-box-item">
+                <div class="tir-carusel-box-next-Btn">
+                  <i class="fa-regular fa-circle-right"></i>
+                </div>
+                <input type="button" class="carusel-Btn-ver2" value="economy" />
+                <div class="tir-carusel-box-tit">
+                  <p>Looking beyond the peak in growth</p>
+                </div>
+              </div>
+            </div>
+            <!-- tir-carusel-box -->
+            <img src="./images/bail_basket.jpg" alt="" />
+          </div>
+
+          <div class="tir-carusel-box-wrapper">
+            <div class="tir-carusel-box">
+              <div class="tir-carusel-box-item">
+                <div class="tir-carusel-box-next-Btn">
+                  <i class="fa-regular fa-circle-right"></i>
+                </div>
+                <input
+                  type="button"
+                  class="carusel-Btn-ver2"
+                  value="innovation"
+                />
+                <div class="tir-carusel-box-tit">
+                  <p>Sustainable finace applied to reducing food waste</p>
+                </div>
+              </div>
+            </div>
+            <!-- tir-carusel-box -->
+            <img src="./images/bail_eli.jpg" alt="" />
+          </div>
+        </div>
+        <!-- tir-carusel-wrapper -->
+
+        <!-- 콘텐츠 더보기 버튼 -->
+        <div class="more-view-Btn-box">
+          <button class="more-view-Btn">See more news</button>
+        </div>
+      </div>
+      <!-- content -->
+    </section>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-menu-box">
+          <div class="footer-menu">
+            <div class="footer-logo"><a href="">HS-Squirrel</a></div>
+          </div>
+
+          <div class="footer-menu">
+            <ul>
+              <li class="footer-menu-tit"><a href="#">Community</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Submit on issue</a></li>
+              <li class="privacy"><a href="#">GitHub Repo</a></li>
+              <li><a href="#">Stock</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <ul>
+              <li class="footer-menu-tit"><a href="#">Getting started</a></li>
+              <li><a href="#">Introdution</a></li>
+              <li><a href="#">Documentaion</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">My cat</a></li>
+              <li><a href="#">T-shirt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <ul>
+              <li class="footer-menu-tit"><a href="#">Account</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Submit on issue</a></li>
+              <li class="privacy"><a href="#">GitHub Repo</a></li>
+              <li><a href="#">Stock</a></li>
+              <li><a href="#">Stock</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <ul>
+              <li class="footer-menu-tit"><a href="#">Contact us</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Submit on issue</a></li>
+              <li class="privacy"><a href="#">GitHub Repo</a></li>
+              <li><a href="#">Stock</a></li>
+              <li><a href="#">Submit on issue</a></li>
+              <li><a href="#">Submit on issue</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom-menu">
+          <div class="copy-writte">
+            <span>&copy;2023 KB-Design-Study All rights reserved.</span>
+          </div>
+          <ul>
+            <li>Term of Serivice</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="swiper.js"></script>
+  </body>
+</html>
