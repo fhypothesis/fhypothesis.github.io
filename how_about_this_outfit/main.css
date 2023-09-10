@@ -420,7 +420,7 @@ a {
   outline: none;
   width: 60px;
   height: 60px;
-  background: url(/images/icons/nextpre-Btn.svg) center center no-repeat;
+  background: url(./images/icons/nextpre-Btn.svg) center center no-repeat;
   top: 250px;
   left: 0;
   transform: translateX(-50%) translateY(-50%);
@@ -433,7 +433,7 @@ a {
   outline: 0px;
   width: 60px;
   height: 60px;
-  background: url(/images/icons/nextpre-Btn.svg) no-repeat;
+  background: url(./images/icons/nextpre-Btn.svg) no-repeat;
   top: 250px;
   right: 0px;
   transform: translate(50%, -50%) rotate(180deg);
