@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>상품들</h1>
+  <ul id="product">
+    <li>상품1</li>
+    <li>상품2</li>
+    <li>상품3</li>
+    <li>상품4</li>
+  </ul>
+</div>
+<button id="ch">바꾸기</button>
+<button id="load">불러오기</button>
+<script>
+  document.getElementById('ch').onclick = () => {
+    const li = document.querySelector('#product>li');
+    console.log(li);
+    li.textContent = li.textContent === '상품1'? '상품5':'상품1';
+  }
+  document.getElementById('load').onclick = () => {
+    const li = document.createElement('li');
+    li.textContent = '상품6';
+    const product = document.getElementById('product');
+    product.append(li);
+  }
+</script>
+</body>
+</html>

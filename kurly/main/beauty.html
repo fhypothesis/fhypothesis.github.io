@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/beauty.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <title>컬리 - 마켓컬리/뷰티컬리</title>
+
+</head>
+
+<body>
+  <header>
+    <!-- 로그인, 회원가입, 고객센터 -->
+    <div class="top-menu-box">
+      <div class="join-login-box">
+        <a class="login-link-text" href="/member/signup.html">
+          회원가입
+        </a>
+        <div class="join-login-slash"></div>
+        <a class="join-link-text" href="/member/login.html">
+          로그인
+        </a>
+        <div class="join-login-slash"></div>
+        <a class="customer-link-text" href="/board/notice.html">
+          고객센터
+          <span class="customer-dropdown-Btn"></span>
+        </a>
+      </div><!-- join-login-box -->
+
+      <!-- 메인로고 & 서치바 배송지등록, 찜, 장바구니 -->
+      <!-- 로고 & 마켓, 뷰티컬리 전환 버튼 -->
+      <div class="logo-search-box-wrapper">
+        <div class="menu-logo-box">
+          <img class="menu-logo" src="/images/icons/kurly_logo.svg" alt="컬리로고">
+          <button class="market-Btn">
+            <a href="/main.html" class="m-b-revese-Btn-g">마켓컬리</a>
+          </button>
+          <button class="beauty-Btn">
+            <a href="/main/beauty.html" class="m-b-revese-Btn-p">뷰티컬리</a>
+          </button>
+        </div>
+
+        <!-- 서치바 -->
+        <div class="top-search-bar-box">
+          <div class="top-search-bar">
+            <input id="gnb_search" placeholder="검색어를 입력해주세요" required="" class="top-search-bar-input" value="">
+            <button id="submit" aria-label="submit" class="top-search-bar-Btn"></button>
+          </div>
+        </div>
+
+        <!-- 배송지등록, 찜, 장바구니 아이콘형 버튼 -->
+        <div class="top-items-box-wrapper">
+          <div class="top-items-box">
+            <div class="items-address-Btn"></div>
+            <button class="items-zzim-Btn" aria-label="찜하기" type="button"></button>
+            <div class="items-basket-Btn-box">
+              <button class="items-basket-Btn"></button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- logo-search-box-wrapper -->
+    </div><!-- top-search-logo-box -->
+
+    <!-- 카테고리 & 메인 메뉴 -->
+    <div class="main-menu-box-wrapper">
+      <div class="main-menu-box">
+        <!-- 카테고리 버튼 -->
+        <div class="cate-box-wrapper">
+          <div class="cate-box" id="categoryBtn">
+            <span class="cate-Btn-icon"></span>
+            <span class="cate-Btn-text">카테고리</span>
+          </div>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <!-- 카테고리 :: 드롭다운 메뉴 아이템 -->
+            <div class="dropdown-item-box">
+              <a href="#"><span class="dropdown-item">스킨케어</span></a>
+              <a href="#"><span class="dropdown-item">메이크업</span></a>
+              <a href="#"><span class="dropdown-item">클렌징</span></a>
+              <a href="#"><span class="dropdown-item">선케어</span></a>
+              <a href="#"><span class="dropdown-item">헤어케어</span></a>
+              <a href="#"><span class="dropdown-item">바디케어</span></a>
+              <a href="#"><span class="dropdown-item">구강・위생용품</span></a>
+              <a href="#"><span class="dropdown-item">향수・디퓨저</span></a>
+              <a href="#"><span class="dropdown-item">유아동</span></a>
+              <a href="#"><span class="dropdown-item">남성</span></a>
+              <a href="#"><span class="dropdown-item">뷰티소품・기기</span></a>
+              <a href="#"><span class="dropdown-item">럭셔리뷰티</span></a>
+              <a href="#"><span class="dropdown-item">선물세트</span></a>
+              <a href="#"><span class="dropdown-item">식품</span></a>
+              <a href="#"><span class="dropdown-item">건강식품</span></a>
+              <a href="#"><span class="dropdown-item">라이프스타일</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- 메인 메뉴 :: 신상품, 베스트, 알뜰, 특가혜택-->
+        <ul class="main-menu-list-box">
+          <li class="main-menu-list">
+            <span class="main-menu-list-sp"><a href="#">신상품</a></span>
+          </li>
+          <li class="main-menu-list">
+            <span class="main-menu-list-sp"><a href="#">베스트</a></span>
+          </li>
+          <li class="main-menu-list">
+            <span class="main-menu-list-sp"><a href="#">특가/혜택</a></span>
+          </li>
+          <li class="main-menu-list">
+            <span class="main-menu-list-sp"><a href="#">브랜드관</a></span>
+          </li>
+        </ul>
+
+        <!-- 샛별택배 배송안내 버튼 -->
+        <div class="delivery-notice-box">
+          <a class="delivery-notice-link" href="">
+            <div class="delivery-notice-inner-box">
+              <span class="delivery-notice-span">샛별・택배</span>
+              배송안내
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <content class="main-content">
+    <!-- 슬라이드 이미지 -->
+    <div class="swiper-place">
+      <div class="swiper-box">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/images/banner/b-kurly-slide-01.jpg"></div>
+            <div class="swiper-slide"><img src="/images/banner/b-kurly-slide-02.jpg"></div>
+            <div class="swiper-slide"><img src="/images/banner/b-kurly-slide-03.jpg"></div>
+          </div>
+          <!-- buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div><!-- swiper-container -->
+      </div>
+    </div>
+
+    <!-- product ::  올 여름 마지막 특가 찬스 -->
+    <div class="product-recommend-place">
+      <div class="product-recommend-tit-box-ver2">
+        <a href="#" class="product-recommend-tit-box-a">
+          <span class="product-recommend-tit">
+            올 여름 마지막 특가 찬스
+          </span>
+          <span class="p-re-tit-right-arrow">
+            <img src="/images/icons/icon-right-arrow.svg" alt="더보기아이콘">
+          </span>
+        </a>
+      </div>
+      <div class="product-recommend-sub-box">
+        <p class="product-recommend-sub">
+          최대 72%! 인기 페스타딜 연장 혜택
+        </p>
+      </div>
+      <div class="product-recommend-box">
+        <div class="product-recommend-swiper">
+          <div class="product-recommend-swiper-wrapper">
+            <a href="#">
+              <div class="product-recommend-img-box">
+                <img src="/images/sumnail/b-kurly-m-s-summer-01.jpg" alt="청귤비타 잡티케어세럼">
+
+                <a class="product-recommend-info-box-wrapper" href="#">
+                  <div class="product-recommend-info-box">
+                    <h3 class="product-name">[구달] 청귤비타C 잡티케어 세럼 30ml 더블 기획세트</h3>
+                    <div>
+                      <div>
+                        <div class="discount-rate">
+                          <span class="discount-rate-tex">
+                            21%
+                          </span>
+                          <span class="sales-price">38,700원</span>
+                        </div>
+                        <div class="dimmed-price">
+                          <span class="dimmed-price-tex">49,000원</span>
+                        </div>
+                        <div class="review-count">
+                          <div class="review-count-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_1513_17755" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                                </path>
+                              </mask>
+                              <path fill="#999"
+                                d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                                mask="url(#path-1-inside-1_1513_17755)"></path>
+                              <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                            </svg>
+                          </div>
+                          <span class="review-count-tex">후기 113+</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- product-recommend-info-box-wrapper -->
+
+              </div><!-- product-recommend-img-box -->
+
+            </a>
+
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-summer-02.jpg" alt="헤라 블랙 쿠션">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[헤라] 블랙 쿠션 (리필포함) 6종 (택1)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          10%
+                        </span>
+                        <span class="sales-price">59,400원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">66,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-summer-03.jpg" alt="선인장 토너 패드 리필 기획 세트">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[페스타딜][야다] 선인장 토너 패드 리필 기획 세트 (단품 70매+리필팩 70매)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          53%
+                        </span>
+                        <span class="sales-price">18,900원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">41,100원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-summer-04.jpg" alt="">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[페스타딜][스킨푸드] 캐롯 & 파슬리 & 에이콘 패드 60매 3종 (택1)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          33%
+                        </span>
+                        <span class="sales-price">17,300원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">26,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+
+          </div><!--  -->
+        </div><!--  -->
+      </div>
+    </div><!-- 올 여름 마지막 특가 찬스 -->
+
+    <!-- 일일한정 특가 -->
+    <div class="special-price-product-box">
+      <div class="product-special-price-left-info-box">
+        <h2 class="sp-left-info-tit">매일 오전 11시 OPEN !</h2>
+        <h3 class="sp-left-info-tit-sub">24시간 한정 일일특가</h3>
+        <div class="sp-clock-box">
+          <div class="lottie-timer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+              preserveAspectRatio="xMidYMid meet"
+              style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+              <defs>
+                <clipPath id="__lottie_element_2">
+                  <rect width="36" height="36" x="0" y="0"></rect>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#__lottie_element_2)">
+                <g transform="matrix(1,0,0,1,3.75,3.75)" opacity="1" style="display: block;">
+                  <g opacity="1" transform="matrix(1,0,0,1,14.25,14.25)">
+                    <path fill="rgb(189,118,255)" fill-opacity="1"
+                      d=" M14,0 C14,7.73199987411499 7.73199987411499,14 0,14 C-7.73199987411499,14 -14,7.73199987411499 -14,0 C-14,-7.73199987411499 -7.73199987411499,-14 0,-14 C7.73199987411499,-14 14,-7.73199987411499 14,0z">
+                    </path>
+                  </g>
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(255,255,255)"
+                      stroke-opacity="1" stroke-width="2"
+                      d=" M14.25,8.293999671936035 C14.25,8.293999671936035 14.25,14.293999671936035 14.25,14.293999671936035">
+                    </path>
+                  </g>
+                  <g opacity="1"
+                    transform="matrix(0.46407416462898254,0.8857963681221008,-0.8857963681221008,0.46407416462898254,20.299617767333984,-4.923895835876465)">
+                    <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(255,255,255)"
+                      stroke-opacity="1" stroke-width="2"
+                      d=" M20.25,14.293999671936035 C20.25,14.293999671936035 14.25,14.293999671936035 14.25,14.293999671936035">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="timer-unit">
+            <span>22</span>
+            <span>43</span>
+            <span>01</span>
+          </div>
+        </div><!-- sp-clock-box -->
+        <p class="sp-left-info-tit-sub-sub">망설이면 늦어요!</p>
+      </div>
+
+      <div class="product-special-price-right-content-box">
+        <a class="sp-product-img-box" href="#">
+          <div class="sp-p-img-container">
+            <img calss="sp-p-img" src="/images/sumnail/b-kurly-m-s-daily-star-01.jpg" alt="조 말론 런던 핸드 크림 트리오">
+          </div>
+
+          <div class="product-recommend-info-box">
+            <h3 class="product-name">[조 말론 런던] 핸드 크림 트리오 (+쇼핑백 증정)</h3>
+            <div>
+              <div>
+                <div class="discount-rate">
+                  <span class="discount-rate-tex">
+                    10%
+                  </span>
+                  <span class="sales-price">77,400원</span>
+                </div>
+                <div class="dimmed-price">
+                  <span class="dimmed-price-tex">86,000원</span>
+                </div>
+                <div class="review-count">
+                  <div class="review-count-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="path-1-inside-1_1513_17755" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                        </path>
+                      </mask>
+                      <path fill="#999"
+                        d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                        mask="url(#path-1-inside-1_1513_17755)"></path>
+                      <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                      <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                      <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                    </svg>
+                  </div>
+                  <span class="review-count-tex">후기 40</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </a>
+
+        <a class="sp-product-img-box" href="#">
+          <div class="sp-p-img-container">
+            <img calss="sp-p-img" src="/images/sumnail/b-kurly-m-s-daily-star-02.jpg" alt="마르시끄 모공 클렌징 실리콘 세안 브러쉬">
+          </div>
+
+          <div class="product-recommend-info-box">
+            <h3 class="product-name">[마르시끄] 모공 클렌징 실리콘 세안 브러쉬</h3>
+            <div>
+              <div>
+                <div class="discount-rate">
+                  <span class="discount-rate-tex">
+                    20%
+                  </span>
+                  <span class="sales-price">8,000원</span>
+                </div>
+                <div class="dimmed-price">
+                  <span class="dimmed-price-tex">10,000원</span>
+                </div>
+                <div class="review-count">
+                  <div class="review-count-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="path-1-inside-1_1513_17755" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                        </path>
+                      </mask>
+                      <path fill="#999"
+                        d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                        mask="url(#path-1-inside-1_1513_17755)"></path>
+                      <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                      <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                      <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                    </svg>
+                  </div>
+                  <span class="review-count-tex">후기 279</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </a>
+
+        <a class="sp-product-img-box" href="#">
+          <div class="sp-p-img-container">
+            <img calss="sp-p-img" src="/images/sumnail/b-kurly-m-s-daily-star-03.jpg" alt="맥 파우더 키스 벨벳 블러 슬림 스틱">
+          </div>
+
+          <div class="product-recommend-info-box">
+            <h3 class="product-name">[맥] 파우더 키스 벨벳 블러 슬림 스틱 (NEW 컬러 출시) 18종 (택1)</h3>
+            <div>
+              <div>
+                <div class="discount-rate">
+                  <span class="discount-rate-tex">
+                    15%
+                  </span>
+                  <span class="sales-price">36,550원</span>
+                </div>
+                <div class="dimmed-price">
+                  <span class="dimmed-price-tex">43,000원</span>
+                </div>
+                <div class="review-count">
+                  <div class="review-count-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="path-1-inside-1_1513_17755" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                        </path>
+                      </mask>
+                      <path fill="#999"
+                        d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                        mask="url(#path-1-inside-1_1513_17755)"></path>
+                      <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                      <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                      <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                    </svg>
+                  </div>
+                  <span class="review-count-tex">후기 282</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div><!-- 일일한정 특가 -->
+
+    <!-- 배너 박스 -->
+    <div class="banner-box">
+      <a class="banner-box-a" href="#">
+        <span class="banner-box-span">
+          <img src="/images/banner/b-kurly-banner-01.jpg" alt="컬리 크리에이터를 찾습니다">
+        </span>
+      </a>
+    </div><!-- 배너 박스 -->
+
+    <!-- product :: 지금 필요한 헤어&바디 -->
+    <div class="product-recommend-place">
+      <div class="product-recommend-tit-box-ver2">
+        <a href="#" class="product-recommend-tit-box-a">
+          <span class="product-recommend-tit">
+            지금 필요한 헤어&바디
+          </span>
+          <span class="p-re-tit-right-arrow">
+            <img src="/images/icons/icon-right-arrow.svg" alt="더보기아이콘">
+          </span>
+        </a>
+      </div>
+      <div class="product-recommend-sub-box">
+        <p class="product-recommend-sub">
+          뷰티컬리에서 최대 74% 할인 중!
+        </p>
+      </div>
+      <div class="product-recommend-box">
+        <div class="product-recommend-swiper">
+          <div class="product-recommend-swiper-wrapper">
+            <a href="#">
+              <div class="product-recommend-img-box">
+                <img src="/images/sumnail/b-kurly-m-s-hair-item-01.jpg" alt="아베다 로즈메리 민트 퓨리파잉 샴푸">
+
+                <a class="product-recommend-info-box-wrapper" href="#">
+                  <div class="product-recommend-info-box">
+                    <h3 class="product-name">[아베다] 로즈메리 민트 퓨리파잉 샴푸 1000ml (지성두피용)</h3>
+                    <div>
+                      <div>
+                        <div class="discount-rate">
+                          <span class="discount-rate-tex">
+                            15%
+                          </span>
+                          <span class="sales-price">78,200원</span>
+                        </div>
+                        <div class="dimmed-price">
+                          <span class="dimmed-price-tex">92,000원</span>
+                        </div>
+                        <div class="review-count">
+                          <div class="review-count-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_1513_17755" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                                </path>
+                              </mask>
+                              <path fill="#999"
+                                d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                                mask="url(#path-1-inside-1_1513_17755)"></path>
+                              <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                            </svg>
+                          </div>
+                          <span class="review-count-tex">후기 329</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- product-recommend-info-box-wrapper -->
+
+              </div><!-- product-recommend-img-box -->
+
+            </a>
+
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-hair-item-02.jpg" alt="아로마티카 로즈마리 헤어 2종 세트">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[아로마티카] 로즈마리 헤어 2종 세트 (스칼프스케일링 샴푸 + 컨디셔너)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          48%
+                        </span>
+                        <span class="sales-price">28,000원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">54,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 76</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-hair-item-03.jpg" alt="">
+
+              <a class="product-recommend-info-box-wrapper" href="쿤달 허니 앤 마카다미아 네이처 샴푸">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[쿤달] 허니 앤 마카다미아 네이처 샴푸 500ml 7종</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          27%
+                        </span>
+                        <span class="sales-price">7,900원~</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">10,900원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-hair-item-04.jpg" alt="">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[조 말론 런던] 핸드 크림 트리오 (+쇼핑백 증정)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          22%
+                        </span>
+                        <span class="sales-price">77,400원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">86,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+
+          </div><!--  -->
+        </div><!--  -->
+      </div>
+    </div><!-- 지금 필요한 헤어&바디 -->
+
+    <!-- 배너 박스 -->
+    <div class="banner-box">
+      <a class="banner-box-a" href="#">
+        <span class="banner-box-span">
+          <img src="/images/banner/banner-galbi.jpeg" alt="배너이미지">
+        </span>
+      </a>
+    </div><!-- 배너 박스 -->
+
+
+    <!-- product :: MD의 추천 -->
+    <div class="product-recommend-place">
+      <div class="product-recommend-tit-box">
+        <span class="product-recommend-tit">
+          MD의 추천
+        </span>
+      </div>
+
+      <div class="md-recommend-key-wrap">
+        <ul class="md-recommend-key-ul">
+          <li>
+            <button type="button" class="md-recommend-key-Btn">스킨케어</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">메이크업</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">클렌징</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">선케어</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">헤어케어</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">바디케어</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">구강·위생용품</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">향수·디퓨저</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">유아동</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">남성</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">뷰티소품·기기</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">럭셔리뷰티</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn-point">선물세트</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">식품</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">건강식품</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">라이프</button>
+          </li>
+          <li>
+            <button type="button" class="md-recommend-key-Btn">건강식품</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="product-recommend-box">
+        <div class="product-recommend-swiper">
+          <div class="product-recommend-swiper-wrapper">
+            <a href="#">
+              <div class="product-recommend-img-box">
+                <img src="/images/sumnail/b-kurly-m-s-MD-01.jpg" alt="지위픽 CAT 에어드라이 닭고기">
+
+                <a class="product-recommend-info-box-wrapper" href="#">
+                  <div class="product-recommend-info-box">
+                    <h3 class="product-name">[지위픽] CAT 에어드라이 닭고기 2종</h3>
+                    <div>
+                      <div>
+                        <div class="discount-rate">
+                          <span class="discount-rate-tex">
+                            <!-- 15% -->
+                          </span>
+                          <span class="sales-price">44,000원~</span>
+                        </div>
+                        <div class="dimmed-price">
+                          <span class="dimmed-price-tex"></span>
+                        </div>
+                        <div class="review-count">
+                          <div class="review-count-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_1513_17755" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                                </path>
+                              </mask>
+                              <path fill="#999"
+                                d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                                mask="url(#path-1-inside-1_1513_17755)"></path>
+                              <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                            </svg>
+                          </div>
+                          <span class="review-count-tex">후기 60</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- product-recommend-info-box-wrapper -->
+
+              </div><!-- product-recommend-img-box -->
+
+            </a>
+
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-MD-02.jpg" alt="CAT 카샤카샤 붕붕 와이어 낚싯대">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[펫츠루트] CAT 카샤카샤 붕붕 와이어 낚싯대</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          <!-- 56% -->
+                        </span>
+                        <span class="sales-price">3,800원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex"></span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 549</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-MD-03.jpg" alt="DOG 바디&페이셜 티슈 2종">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[페피릴리프] DOG 바디&페이셜 티슈 2종 (택1)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          <!-- 10% -->
+                        </span>
+                        <span class="sales-price">3,300원~</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex"></span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-MD-04.jpg" alt="생활공작소 제습제 640ml">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[생활공작소] 제습제 640ml (12개입 1box)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          17%
+                        </span>
+                        <span class="sales-price">15,500원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">18,900원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+
+          </div><!--  -->
+        </div><!--  -->
+      </div>
+    </div><!-- MD의 추천 -->
+
+    <!-- 선물세트 링크 버튼 -->
+    <a href="#" class="house-goods-Btn">
+      <span class="house-goods-Btn-tex">선물세트 전체보기 </span>
+    </a>
+
+    <!-- product :: 계절이 바뀌어도 손이 가요 -->
+    <div class="product-recommend-place">
+      <div class="product-recommend-tit-box-ver2">
+        <a href="#" class="product-recommend-tit-box-a">
+          <span class="product-recommend-tit">
+            계절이 바뀌어도 손이 가요
+          </span>
+          <span class="p-re-tit-right-arrow">
+            <img src="/images/icons/icon-right-arrow.svg" alt="더보기아이콘">
+          </span>
+        </a>
+      </div>
+      <div class="product-recommend-sub-box">
+        <p class="product-recommend-sub">
+          메이크업 스테디셀러 최대 58%
+        </p>
+      </div>
+      <div class="product-recommend-box">
+        <div class="product-recommend-swiper">
+          <div class="product-recommend-swiper-wrapper">
+            <a href="#">
+              <div class="product-recommend-img-box">
+                <img src="/images/sumnail/b-kurly-m-s-stedy-01.jpg" alt="에스티 로더 더블웨어 파운데이션 30ml 7종">
+
+                <a class="product-recommend-info-box-wrapper" href="#">
+                  <div class="product-recommend-info-box">
+                    <h3 class="product-name">[에스티 로더] 더블웨어 파운데이션 30ml 7종 (택1) (+디럭스 3종&펌핑기 증정)</h3>
+                    <div>
+                      <div>
+                        <div class="discount-rate">
+                          <span class="discount-rate-tex">
+                            15%
+                          </span>
+                          <span class="sales-price">71,400원</span>
+                        </div>
+                        <div class="dimmed-price">
+                          <span class="dimmed-price-tex">84,000원</span>
+                        </div>
+                        <div class="review-count">
+                          <div class="review-count-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_1513_17755" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                                </path>
+                              </mask>
+                              <path fill="#999"
+                                d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                                mask="url(#path-1-inside-1_1513_17755)"></path>
+                              <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                            </svg>
+                          </div>
+                          <span class="review-count-tex">후기 999+</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- product-recommend-info-box-wrapper -->
+
+              </div><!-- product-recommend-img-box -->
+
+            </a>
+
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-stedy-02.jpg" alt="로라 메르시에 매트 아이 컬러 3종 (택1)">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[로라 메르시에] 매트 아이 컬러 3종 (택1)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          12%
+                        </span>
+                        <span class="sales-price">36,550원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">43,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 415</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-stedy-03.jpg" alt="">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[투쿨포스쿨] 바이로댕 쉐딩 엑스퍼트 3종(택1)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          58%
+                        </span>
+                        <span class="sales-price">12,800원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">31,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 9,999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-stedy-04.jpg" alt="에뛰드 드로잉 아이 브로우 3종">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[에뛰드] 드로잉 아이 브로우 3종 (택1)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          30%
+                        </span>
+                        <span class="sales-price">2,240원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">3,200</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 9,999+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+
+          </div><!--  -->
+        </div><!--  -->
+      </div>
+    </div><!-- 계절이 바뀌어도 손이 가요 -->
+
+    <!-- 뷰티컬리 DIVSCOVERY -->
+    <div class="original-product-wrapper">
+      <div class="original-product-box">
+        <div class="product-recommend-tit-box-ver2">
+          <a href="#" class="product-recommend-tit-box-a">
+            <span class="product-recommend-tit">
+              뷰티컬리 DISCOVERY
+            </span>
+            <span class="p-re-tit-right-arrow">
+              <img src="/images/icons/icon-right-arrow.svg" alt="더보기아이콘">
+            </span>
+          </a>
+        </div>
+        <div class="product-recommend-sub-box">
+          <p class="product-recommend-sub">
+            가장 핫한 트렌드부터 TOP 랭킹 아이템까지!
+          </p>
+        </div>
+
+        <div class="original-product-img-box-wrap">
+          <div class="original-product-swiper">
+            <div class="product-recommend-swiper-wrapper">
+
+              <div class="original-product-img-left-wrapper">
+                <a href="#" class="original-product-img-box">
+                  <span>
+                    <img src="/images/sumnail/b-k-mybeauty-house-sums-01.jpg" alt="바다를 사랑하는 여행자의 뷰티 아이템">
+                  </span>
+                  <div class="original-product-img-tex">
+                    <strong class="original-product-img-tex-tit">
+                      바다를 사랑하는 여행자의 뷰티 아이템
+                    </strong>
+                    <span class="original-product-img-tex-sub">
+                      마케터 이홍안
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <a href="#" class="original-product-img-box">
+                <span>
+                  <img src="/images/sumnail/b-k-mybeauty-house-sums-02.jpg" alt="한여름에도 무너짐 없는 메이크업 팁">
+                </span>
+                <div class="original-product-img-tex">
+                  <strong class="original-product-img-tex-tit">
+                    한여름에도 무너짐 없는
+                  </strong>
+                  <span class="original-product-img-tex-sub">
+                    메이크업 TIP 3
+                  </span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- product :: 20만원 상당의 GIFT -->
+    <div class="product-recommend-place">
+      <div class="product-recommend-tit-box-ver2">
+        <a href="#" class="product-recommend-tit-box-a">
+          <span class="product-recommend-tit">
+            20만원 상당의 GIFT
+          </span>
+          <span class="p-re-tit-right-arrow">
+            <img src="/images/icons/icon-right-arrow.svg" alt="더보기아이콘">
+          </span>
+        </a>
+      </div>
+      <div class="product-recommend-sub-box">
+        <p class="product-recommend-sub">
+          처서와 함께하는 라 메르
+        </p>
+      </div>
+      <div class="product-recommend-box">
+        <div class="product-recommend-swiper">
+          <div class="product-recommend-swiper-wrapper">
+            <a href="#">
+              <div class="product-recommend-img-box">
+                <img src="/images/sumnail/b-kurly-m-s-20gift-01.jpg" alt="New 모이스춰라이징 소프트 크림">
+
+                <a class="product-recommend-info-box-wrapper" href="#">
+                  <div class="product-recommend-info-box">
+                    <h3 class="product-name">[라 메르] New 모이스춰라이징 소프트 크림 30ml</h3>
+                    <div>
+                      <div>
+                        <div class="discount-rate">
+                          <span class="discount-rate-tex">
+                            15%
+                          </span>
+                          <span class="sales-price">254,150원</span>
+                        </div>
+                        <div class="dimmed-price">
+                          <span class="dimmed-price-tex">299,000</span>
+                        </div>
+                        <div class="review-count">
+                          <div class="review-count-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_1513_17755" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                                </path>
+                              </mask>
+                              <path fill="#999"
+                                d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                                mask="url(#path-1-inside-1_1513_17755)"></path>
+                              <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                            </svg>
+                          </div>
+                          <span class="review-count-tex">후기 22</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- product-recommend-info-box-wrapper -->
+
+              </div><!-- product-recommend-img-box -->
+
+            </a>
+
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-20gift-02.jpg" alt="핸드 트리트먼트 100ml">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[라 메르] 핸드 트리트먼트 100ml</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          15%
+                        </span>
+                        <span class="sales-price">126,650원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">149,000</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-20gift-03.jpg" alt="라 메르 바디 크림 300ml">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[라 메르] 바디 크림 300ml</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          15%
+                        </span>
+                        <span class="sales-price">126,650원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">149,000</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-20gift-04.jpg" alt="감자 고로케">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[라 메르] 바디 크림 300ml</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          15%
+                        </span>
+                        <span class="sales-price">370,600원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">434,600</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+
+          </div><!--  -->
+        </div><!--  -->
+      </div>
+    </div><!-- 20만원 상당의 GIFT -->
+
+
+    <!-- product :: 작지만 반응 좋은 선물 -->
+    <div class="product-recommend-place">
+      <div class="product-recommend-tit-box-ver2">
+        <a href="#" class="product-recommend-tit-box-a">
+          <span class="product-recommend-tit">
+            작지만 반응 좋은 선물
+          </span>
+          <span class="p-re-tit-right-arrow">
+            <img src="/images/icons/icon-right-arrow.svg" alt="더보기아이콘">
+          </span>
+        </a>
+      </div>
+      <div class="product-recommend-sub-box">
+        <p class="product-recommend-sub">
+          5만원 이하 센스있는 추천템만 모았어요
+        </p>
+      </div>
+      <div class="product-recommend-box">
+        <div class="product-recommend-swiper">
+          <div class="product-recommend-swiper-wrapper">
+            <a href="#">
+              <div class="product-recommend-img-box">
+                <img src="/images/sumnail/b-kurly-m-s-small-gift-01.jpg" alt="이스터에그 포슬린 아트 에디션 선물세트">
+
+                <a class="product-recommend-info-box-wrapper" href="#">
+                  <div class="product-recommend-info-box">
+                    <h3 class="product-name">[바버] 이스터에그 포슬린 아트 에디션 선물세트 (2ml*14병)</h3>
+                    <div>
+                      <div>
+                        <div class="discount-rate">
+                          <span class="discount-rate-tex">
+                            15%
+                          </span>
+                          <span class="sales-price">4,420원</span>
+                        </div>
+                        <div class="dimmed-price">
+                          <span class="dimmed-price-tex">5,200원</span>
+                        </div>
+                        <div class="review-count">
+                          <div class="review-count-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_1513_17755" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                                </path>
+                              </mask>
+                              <path fill="#999"
+                                d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                                mask="url(#path-1-inside-1_1513_17755)"></path>
+                              <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                              <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                            </svg>
+                          </div>
+                          <span class="review-count-tex">후기 999+</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- product-recommend-info-box-wrapper -->
+
+              </div><!-- product-recommend-img-box -->
+
+            </a>
+
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-small-gift-02.jpg" alt="베트남 용과">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[숨37] 시크릿 에센스 45ml 스페셜 선물세트</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          20%
+                        </span>
+                        <span class="sales-price">36,000원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">45,000원</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 275</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-small-gift-03.jpg" alt="퍼퓸 핸드크림 해피니스 부스터">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[옵타움] 퍼퓸 핸드크림 해피니스 부스터</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          4%
+                        </span>
+                        <span class="sales-price">8,500원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex">8,900</span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 326</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+            <div class="product-recommend-img-box">
+              <img src="/images/sumnail/b-kurly-m-s-small-gift-04.jpg" alt="고당도 파인애플">
+
+              <a class="product-recommend-info-box-wrapper" href="#">
+                <div class="product-recommend-info-box">
+                  <h3 class="product-name">[러쉬] 러블리 - 기프트 (+쇼핑백 포함)</h3>
+                  <div>
+                    <div>
+                      <div class="discount-rate">
+                        <span class="discount-rate-tex">
+                          <!-- 4% -->
+                        </span>
+                        <span class="sales-price">31,000원</span>
+                      </div>
+                      <div class="dimmed-price">
+                        <span class="dimmed-price-tex"></span>
+                      </div>
+                      <div class="review-count">
+                        <div class="review-count-icon">
+                          <svg width="100%" height="100%" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1513_17755" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 2C1.89543 2 1 2.89543 1 4V8.67201C1 9.77658 1.89543 10.672 3 10.672H5.11212L6.33682 12.7653C6.5299 13.0954 7.00688 13.0954 7.19995 12.7653L8.42465 10.672H10.5C11.6046 10.672 12.5 9.77658 12.5 8.67201V4C12.5 2.89543 11.6046 2 10.5 2H3Z">
+                              </path>
+                            </mask>
+                            <path fill="#999"
+                              d="M5.11212 10.672L5.97526 10.167L5.68564 9.67201H5.11212V10.672ZM6.33682 12.7653L5.47369 13.2703L5.47369 13.2703L6.33682 12.7653ZM7.19995 12.7653L6.33682 12.2604L6.33682 12.2604L7.19995 12.7653ZM8.42465 10.672V9.67201H7.85113L7.56152 10.167L8.42465 10.672ZM2 4C2 3.44772 2.44772 3 3 3V1C1.34315 1 0 2.34315 0 4H2ZM2 8.67201V4H0V8.67201H2ZM3 9.67201C2.44772 9.67201 2 9.22429 2 8.67201H0C0 10.3289 1.34315 11.672 3 11.672V9.67201ZM5.11212 9.67201H3V11.672H5.11212V9.67201ZM7.19995 12.2604L5.97526 10.167L4.24899 11.177L5.47369 13.2703L7.19995 12.2604ZM6.33682 12.2604C6.5299 11.9304 7.00688 11.9304 7.19995 12.2604L5.47369 13.2703C6.05291 14.2604 7.48386 14.2604 8.06309 13.2703L6.33682 12.2604ZM7.56152 10.167L6.33682 12.2604L8.06309 13.2703L9.28779 11.177L7.56152 10.167ZM10.5 9.67201H8.42465V11.672H10.5V9.67201ZM11.5 8.67201C11.5 9.22429 11.0523 9.67201 10.5 9.67201V11.672C12.1569 11.672 13.5 10.3289 13.5 8.67201H11.5ZM11.5 4V8.67201H13.5V4H11.5ZM10.5 3C11.0523 3 11.5 3.44772 11.5 4H13.5C13.5 2.34315 12.1569 1 10.5 1V3ZM3 3H10.5V1H3V3Z"
+                              mask="url(#path-1-inside-1_1513_17755)"></path>
+                            <circle fill="#999" cx="4.34998" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="6.75" cy="6.17871" r="0.75"></circle>
+                            <circle fill="#999" cx="9.15002" cy="6.17871" r="0.75"></circle>
+                          </svg>
+                        </div>
+                        <span class="review-count-tex">후기 81</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a><!-- product-recommend-info-box-wrapper -->
+
+            </div>
+
+          </div><!--  -->
+        </div><!--  -->
+      </div>
+    </div><!-- 작지만 반응 좋은 선물 -->
+
+
+  </content>
+
+  <footer class="kurly-footer">
+    <div class="kur-footer-box-wrap">
+      <div class="kur-footer-box">
+
+        <div class="kur-footer-inner-box">
+          <div class="kur-footer-inner-box-left">
+            <h2>고객행복센터</h2>
+            <strong class="footer-call-num">
+              1644-1107
+              <span class="call-operating-time">월~토요일 오전 7시 - 오후 6시</span>
+            </strong>
+            <div class="customer-inquiry">
+              <div class="customer-inquiry-box">
+                <button class="inquiry-Btn">카카오톡 문의</button>
+                <div class="inquiry-Btn-sub-text">
+                  월~토요일
+                  <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="css-w0fx7a eam2qm50">
+                    <line x1="0.5" y1="2.18557e-08" svg="0.5" y2="10" stroke="#ccc"></line>
+                  </svg>
+                  오전 7시 - 오후 6시
+                  <br>
+                  일/공휴일
+                  <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="css-w0fx7a eam2qm50">
+                    <line x1="0.5" y1="2.18557e-08" x2="0.5" y2="10" stroke="#ccc"></line>
+                  </svg>
+                  오전 7시 - 오후 1시
+                </div>
+              </div>
+              <div class="customer-inquiry-box">
+
+                <button class="inquiry-Btn">1:1 문의</button>
+                <div class="inquiry-Btn-sub-text">
+                  365일
+                  <br>
+                  고객센터 운영시간에 순차적으로 답변드리겠습니다.
+                </div>
+              </div>
+              <div class="customer-inquiry-box">
+
+                <button class="inquiry-Btn">대량주문 문의</button>
+                <div class="inquiry-Btn-sub-text">
+                  월~금요일
+                  <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="css-w0fx7a eam2qm50">
+                    <line x1="0.5" y1="2.18557e-08" svg="0.5" y2="10" stroke="#ccc"></line>
+                  </svg>
+                  오전 9시 - 오후 6시
+                  <br>
+                  점심시간
+                  <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="css-w0fx7a eam2qm50">
+                    <line x1="0.5" y1="2.18557e-08" x2="0.5" y2="10" stroke="#ccc"></line>
+                  </svg>
+                  낮 12시 - 오후 1시
+                </div>
+              </div>
+            </div>
+            <div class="inquiry-email">
+              비회원 문의:
+              <a href="#" class="inquiry-email">
+                help@kurlycorp.com
+              </a>
+            </div>
+          </div>
+
+          <div class="kur-footer-inner-box-right">
+            <ul class="footer-intro-box-ul">
+              <li>컬리소개</li>
+              <li>컬리소개영상</li>
+              <li>투자정보</li>
+              <li>인재채용</li>
+              <li>이용약관</li>
+              <li>개인정보처리방침</li>
+              <li>이용안내</li>
+            </ul>
+
+            <div class="company-info">
+              법인명 (상호) : 주식회사 컬리
+              <span class="company-info-slash"></span>
+              사업자등록번호 : 261-81-23567 <a href="">사업자정보 확인</a>
+              <br>
+              통신판매업 : 제 2018-서울강남-01646 호
+              <br>
+              주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
+              <span class="company-info-slash"></span>
+              대표이사 : 김슬아
+              <br>
+              채용문의: <a href="#">recruit@kurlycorp.com</a>
+              <br>
+              팩스 : 070 - 7500 - 6098
+            </div>
+
+            <ul class="footer-social-icon-box">
+              <a href="#" target="_blank" rel="noreferrer" class="footer-social-icon">
+                <img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="컬리 인스타그램 바로가기"></a>
+              <a href="#" target="_blank" rel="noreferrer" class="footer-social-icon">
+                <img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="컬리 페이스북 바로가기"></a>
+              <a href="#" target="_blank" rel="noreferrer" class="footer-social-icon">
+                <img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="컬리 네이버블로그 바로가기"></a>
+              <a href="#" target="_blank" rel="noreferrer" class="footer-social-icon">
+                <img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="컬리 네이버포스트 바로가기"></a>
+              <a href="#" target="_blank" rel="noreferrer" class="footer-social-icon">
+                <img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="컬리 유튜브 바로가기"></a>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="kur-footer-logos-box">
+          <button class="kur-footer-logo-Btn">
+            <img src="/images/icons/footer-logo-01.svg" alt="#" class="footer-logo-img">
+            <p>[인증범위] 컬리 쇼핑몰 서비스 개발·운영<br>
+              (심사받지 않은 물리적 인프라 제외)
+              <br>[유효기간] 2022.01.19 ~
+              2025.01.18
+            </p>
+          </button>
+
+          <button class="kur-footer-logo-Btn">
+            <img src="/images/icons/footer-logo-02.svg" alt="#" class="footer-logo-img">
+            <p>개인정보보호 우수 웹사이트 ·<br>
+              개인정보처리시스템 인증 (ePRIVACY PLUS)
+            </p>
+          </button>
+
+          <button class="kur-footer-logo-Btn">
+            <img src="/images/icons/footer-logo-03.svg" alt="#" class="logo-img-paysment">
+            <p>토스페이먼츠 구매안전(에스크로)<br>
+              서비스를 이용하실 수 있습니다.
+            </p>
+          </button>
+
+          <button class="kur-footer-logo-Btn">
+            <img src="/images/icons/footer-logo-04.svg" alt="#" class="footer-logo-img">
+            <p>고객님이 현금으로 결제한 금액에 대해 우리은행과<br>
+              채무지급보증 계약을 체결하여 안전거래를 보장하고<br>
+              있습니다.
+            </p>
+          </button>
+        </div>
+      </div><!-- kur-footer-logos-box -->
+
+
+
+      <div class="kur-footer-copy-box">
+        컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.<br>
+        마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+        <p class="kur-footer-copy-box-copyw">© KURLY CORP. ALL RIGHTS RESERVED</p>
+      </div>
+
+    </div><!-- kur-footer-box-wrap -->
+  </footer>
+
+</body>
+
+</html>
+<script src="/js/main.js"></script>
+<script src="/js/swiper.js"></script>

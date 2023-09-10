@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>할 일 목록</title>
+</head>
+<body>
+  <h1>할 일</h1>
+  <div>
+    <input type="text" name="todo" id="todo"/>
+    <button id="add">추가</button>
+  </div>
+    <ul class="list">
+    </ul>
+  <script>
+    // JSON 객체로 되어 있는 것을 문자열로 변환하는 함수
+    // {a:10, b:20} -> '{a:10, b:20}'
+    // JSON.stringify()
+    // JSON 문자열로 되어 있는 것을 JSON 객체로 변환하는 함수
+    // '{a:10, b:20}' -> {a:10, b:20}
+    // JSON.parse()
+    const doAdd = (text) => {
+      const li = document.createElement('li');
+      li.style.display = 'flex';
+      li.style.alignItems = 'center';
+
+      const h2 = document.createElement('h2');
+      h2.style.marginRight = '1rem';
+      if(text === null)
+        h2.textContent = todo.value;
+      else
+        h2.textContent = text;
+    
+        h2.onclick = () => {
+          h2.style.textDecoration = (h2.style.textDecoration === 'line-through') ? '' : 'line-through';
+          h2.style.color = (h2.style.color === '') ? 'grey' : '';
+          // color가 grey가 되면 flase 이므로 grey가 적용이 되지 않고 false 값인 ''이 된다.
+        }
+
+      const button = document.createElement('button');
+      button.textContent = '삭제';
+      button.onclick = () => {
+        const coloseli = button.closest('li');
+        ul.removeChild(coloseli);
+
+        let todolist = JSON.parse(localStorage.getItem('todolist'));
+        if(todolist) {
+          todolist = todolist.filter(ele => ele !== h2.textContent);
+          localStorage.setItem('todolist', JSON.stringify(todolist));
+        }
+      }
+
+      li.appendChild(h2);
+      li.appendChild(button);
+
+      const ul = document.getElementsByClassName('list')[0];
+      ul.appendChild(li);
+    }
+ 
+    document.getElementById('add').onclick = () => {
+      const todo = document.getElementById('todo');
+      if(todo.value === '') {
+        return;
+      }
+      doAdd();
+      if(todolist === null || todolist === 'null') {
+        todolist = new Array(); 
+        todolist.push(todo.value);
+      } else {
+        todolist.push(todo.value);
+      }
+      console.log(todolist);
+      localStorage.setItem('todolist', JSON.stringify(todolist));
+
+      todo.value = '';
+    }
+
+  let todolist = JSON.parse(localStorage.getItem('todolist'));
+  if(todolist) {
+    todolist.map(ele => {
+    doAdd(ele);
+    })
+  }
+  
+ </script>
+</body>
+</html>

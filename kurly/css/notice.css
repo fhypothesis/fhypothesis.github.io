@@ -1,0 +1,256 @@
+.board-form-wrap {
+	position: relative;
+	min-width: 1050px;
+}
+
+.board-form-box {
+	display: flex;
+	width: 1050px;
+	padding: 50px 0px 80px;
+	margin: 0px auto;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+.board-side-bar-box {
+	width: 200px;
+}
+
+.board-box {
+	width: 820px;
+}
+
+.board-side-bar-tit {
+	height: 75px;
+	padding: 5px 0px 0 1px;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 35px;
+	color: rgb(51, 51, 51);
+	letter-spacing: -1px;
+}
+
+.b-side-b-li-box {
+	border: 1px solid rgb(242, 242, 242);
+}
+
+.b-side-b-li-fir {
+	background-color: rgb(250, 250, 250);
+	color: rgb(95, 0, 128);
+	font-weight: 500;
+
+	cursor: pointer;
+	border-bottom: 1px solid rgb(242, 242, 242);
+	padding: 15px 13px 15px 20px;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	line-height: 19px;
+	letter-spacing: -0.3px;
+	font-size: 14px;
+}
+
+.b-side-b-li {
+	cursor: pointer;
+	border-bottom: 1px solid rgb(242, 242, 242);
+	padding: 15px 13px 15px 20px;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	line-height: 19px;
+	letter-spacing: -0.3px;
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+}
+
+.b-side-b-li-box li a:hover {
+	background-color: rgb(250, 250, 250);
+	color: rgb(95, 0, 128);
+	font-weight: 500;
+}
+
+.b-side-b-li-box li:hover svg use {
+	stroke: rgb(95, 0, 128);
+}
+
+.b-side-b-li-last {
+	cursor: pointer;
+	padding: 15px 13px 15px 20px;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	line-height: 19px;
+	letter-spacing: -0.3px;
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+}
+
+.side-bar-help {
+	height: 60px;
+	padding: 0px 14px 0px 20px;
+	margin-top: 36px;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	background-color: rgb(250, 250, 250);
+	line-height: 20px;
+}
+
+.side-bar-help-txt {
+	display: flex;
+	flex-direction: column;
+	color: rgb(51, 51, 51);
+}
+
+.side-bar-help-txt-fir {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.side-bar-help-txt-sec {
+	font-size: 12px
+}
+
+/* 게시판 영역 */
+
+.board-box-tit-box {
+	display: flex;
+	width: 100%;
+	padding-bottom: 27px;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+.board-box-tit {
+	display: flex;
+	flex-direction: row;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.b-txt-h2 {
+	font-weight: 500;
+	font-size: 24px;
+	color: rgb(51, 51, 51);
+	letter-spacing: -0.5px;
+	line-height: 48px;
+}
+
+.b-txt-span {
+	padding-left: 11px;
+	font-size: 14px;
+	letter-spacing: -0.3px;
+	color: rgb(153, 153, 153);
+	line-height: 20px;
+}
+
+.board-table-head {
+	display: flex;
+	width: 100%;
+	padding: 20px 0px;
+	border-bottom: 1px solid rgb(51, 51, 51);
+	border-top: 2px solid rgb(51, 51, 51);
+
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.table-head-no {
+	flex-basis: 50px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+}
+
+.table-head-title {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	text-align: center;
+	line-height: 20px;
+	color: rgb(51, 51, 51);
+}
+
+.table-head-wri {
+	flex-basis: 100px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+}
+
+.table-detail {
+	display: flex;
+	flex-direction: column;
+}
+
+.table-detail-line-sty {
+	display: flex;
+	width: 100%;
+	padding: 18px 0px;
+	font-size: 14px;
+	font-weight: 400;
+
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid rgb(244, 244, 244);
+}
+
+.table-detail-day {
+	flex-basis: 100px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+/* 게시판 pre, next 버튼 */
+
+.board-next-pre-Btns-box {
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	padding: 60px 0px 0px;
+}
+
+.board-n-p-Btns-in-box {
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.paging-pre-dis-Btn {
+	background-image: url(/images/icons/paging-prev-disabled.svg);
+	cursor: default;
+
+	width: 44px;
+	height: 44px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.paging-next-Btn {
+	width: 44px;
+	height: 44px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	cursor: pointer;
+	background-color: transparent;
+	background-image: url(/images/icons/paging-next-activated.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
