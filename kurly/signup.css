@@ -92,7 +92,7 @@
   border-radius: 3px;
 }
 
-.form-input-Btn-box>button>span {
+.form-input-Btn-box > button > span {
   font-weight: 500;
   font-size: 14px;
 }
@@ -220,7 +220,7 @@
   border: 1px solid rgb(221, 221, 221);
 }
 
-.gender-radio-input:checked+.radio-Btn-style {
+.gender-radio-input:checked + .radio-Btn-style {
   min-width: 24px;
   min-height: 24px;
   display: inline-block;
@@ -443,7 +443,7 @@
   margin-right: 22px;
   width: 6px;
   height: 9px;
-  background: url(/images/icons/ico-pop-terms.svg) 50% 50% / 6px 9px no-repeat;
+  background: url(./images/icons/ico-pop-terms.svg) 50% 50% / 6px 9px no-repeat;
 }
 
 .signup-Btn-box-wrap {
