@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/jang_favicon.svg">
+
+  <script src="https://kit.fontawesome.com/2d6d92416f.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- bx slider -->
+  <link rel="stylesheet" href="/css/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+<link>
+
+@import
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>장보자닷컴</title>
+
+  <!-- <style>
+  @media screen and (max-width: 767px) { }
+  @media screen and (max-width: 768px) and (max-width: 960px) { }
+  @media screen and (max-width: 961px) { }
+  </style> -->
+
+</head>
+
+
+<body>
+
+  <div>
+    <header id="header">
+      <div class="header-content">
+        <div class="section">
+          <div class="header-section">
+            <div>
+              <h1>
+                <a href="main.html" class="logoMark" title="장보자닷컴"></a>
+              </h1>
+            </div>
+            <div class="header-search">
+              <input type="text" placeholder="상품을 검색해보세요!">
+              <button type="button" class="btn-search">
+                <span>검색~</span>
+              </button>
+            </div><!-- header-search -->
+            <div class="unit-nav">
+              <ul>
+                <li class="mymenu"><a href="#"><span>장보자</span></a></li>
+                <li class="order"><a href="#"><span>주문/배송</span></a></li>
+                <li class="wish"><a href="#"><span>나의 찜</span></a></li>
+                <li class="cart"><a href="#"><span>장바구니</span></a></li>
+              </ul>
+            </div>
+            <!--unit-nav-->
+          </div><!-- header-section -->
+        </div><!-- section -->
+      </div><!-- header-content -->
+
+      <div class="header-navigation">
+        <div class="section">
+          <div class="category-wrap">
+            <button type="button" class="btn-cate">
+              <span>카테고리</span>
+            </button>
+          </div>
+
+          <nav>
+            <ul class="gnb swiper-wrapper">
+              <li><a href="#">홈</a></li>
+              <li><a href="#">매장행사</a></li>
+              <li><a href="#">베스트</a></li>
+              <li><a href="#">신상품</a></li>
+              <li><a href="#">외식브랜딩</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">레시피</a></li>
+            </ul>
+          </nav>
+
+          <div class="gnb-wrap">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">고객센터</a>
+          </div>
+        </div>
+      </div><!-- section -->
+
+      <div id="box-category" class="box-category">
+        <div class="section">
+          <a href="#" id="close-nav" class="close-nav">
+            <span></span>
+          </a>
+          <div class="box-wrap">
+            <div class="category-list active">
+              <h3>농수축산</h3>
+              <ul>
+                <li><a href="#">야채/채소</a></li>
+                <li><a href="#">과일</a></li>
+                <li><a href="#">쌀/잡곡</a></li>
+                <li><a href="#">축산/계란</a></li>
+                <li><a href="#">수산/건어물</a>
+                </li>
+                <li><a href="#">견과</a></li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h3>가공식품</h3>
+              <ul>
+                <li><a href="#">고추장/된장/간장류</a>
+                </li>
+                <li><a href="#">양념/소스/육수</a>
+                </li>
+                <li><a href="#">식용유/조미료</a>
+                </li>
+                <li><a href="#">밀가루/라면/면</a>
+                </li>
+                <li><a href="#">유제품/냉장/냉동</a>
+                </li>
+                <li><a href="#">캔/통조림</a></li>
+                <li><a href="#">김/편이식/반찬</a>
+                </li>
+                <li><a href="#">생수/음료</a></li>
+                <li><a href="#">커피믹스/티백</a>
+                </li>
+                <li><a href="#">빵/스낵/안주류</a>
+                </li>
+                <li><a href="#">헬스/건강식품</a>
+                </li>
+                <li><a href="#">반려동물용품</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-list">
+              <h3>주방조리용품</h3>
+              <ul>
+                <li><a href="#">소모품/일회용품</a>
+                </li>
+                <li><a href="#">조리도구</a></li>
+                <li><a href="#">식기/밀폐용기</a>
+                </li>
+                <li><a href="#">주전자/프라이팬</a>
+                </li>
+                <li><a href="#">냄비/솥/찜기</a>
+                </li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h3>생활용품</h3>
+              <ul>
+                <li><a href="#">주방잡화</a></li>
+                <li><a href="#">욕실잡화</a></li>
+                <li><a href="#">생활잡화</a></li>
+                <li><a href="#">캠핑용품</a></li>
+                <li><a href="#">사무/자동차용품</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-list">
+              <h3>대용량/박스상품</h3>
+              <ul>
+                <li><a href="#">대용량 농산물</a>
+                </li>
+                <li><a href="#">대용량 축산물</a>
+                </li>
+                <li><a href="#">대용량 수산물</a>
+                </li>
+                <li><a href="#">대용량 장류/양념</a>
+                </li>
+                <li><a href="#">대용량 냉장/냉동</a>
+                </li>
+                <li><a href="#">대용량 가공식품</a>
+                </li>
+                <li><a href="#">대용량 커피/음료</a>
+                </li>
+                <li><a href="#">대용량 소모품/세제</a>
+                </li>
+                <li><a href="#">대용량 식기/도구</a>
+                </li>
+                <li><a href="#">바로장보고</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- box-category -->
+    </header>
+  </div>
+
+  <div id="container">
+    <div class="main-section">
+      <!-- 메인슬라이드 -->
+      <div class="main-slide-wrap">
+        <div class="slider">
+          <div><img src="./images/main_slide_01.jpeg" /></div>
+          <div><img src="./images/main_slide_02.jpeg" /></div>
+          <div><img src="./images/main_slide_03.jpeg" /></div>
+        </div>
+        <div class="slide_bottom_btn"><span>1 / 3</span></div>
+      </div><!-- main-slide-wrap -->
+    </div>
+
+
+    <!-- 메인 콘텐츠 요소 덩어리 한 그룹-->
+    <!-- 복날모음전 -->
+    <div class="main-section-theme">
+      <div class="static">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>복날 모음전</strong>
+          </h3>
+        </div>
+        <div class="item-box default">
+          <ul class="item-img-list list-items">
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    비비고삼계탕 800G/씨제이
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>9,900</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/03/23/212//202003231634154c62236907cf414b910b2e1010af465d_gnm1.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    스모크치킨 180g/대림
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>3,750</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/03/10/668//20200310170440a3f02b934df442559e9033c50fdb46ce_rdav.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    옛날통닭(2마리) 720G/(주)사조오양
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>21,400</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/07/20/209//202107201012059be917992f244f2894230d5c1008f680_7qby.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    비비고닭곰탕 500G/씨제이제일제당(주)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>4,250</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub07/01//20190430113048a3bb7a005a364710aa8fc25d4c877c79_5opp.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    염지닭후라이드치킨 600G(1수)/대성푸드시스템</span>
+                </a>
+                <div class="price">
+                  <strong>8,950</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/06/14/749//202306140927459e7431496003469b8a4300e4aba70178_ljzt.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#"><span class="item-info-tit">
+                    양반들깨닭죽 420G/동원</span>
+                </a>
+                <div class="price">
+                  <strong>3,500</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/03/23/021//20200323132220ea92d9785ec94b01a313f7a6ca11d8f2_b2qz.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    삼계탕골드 1KG/부광식품</span>
+                </a>
+                <div class="price">
+                  <strong>7,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/04/27/820//202304271050200535dad1d3234552893bd9b3c57b19cb_mmph.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    비비고누룽지닭백숙죽 280G/씨제이</span></a>
+                <div class="price">
+                  <strong>2,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/03/23/586//20200323164230ae35504c35a84f6a8ada2616b3f3ec15_kcal.jpg">
+                </div> <!-- //item -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div><!-- main-section-theme-->
+
+    <!-- 중간중간 들어가는 띠 배너 -->
+    <!-- 친구소개 10000원 -->
+    <div class="section">
+      <div class="main-section-bnr">
+        <img src="http://jangfood1.hgodo.com/shop/external/fix/IMG_BANNER/696/20200619161844-2b6-77154c957406.jpg">
+      </div>
+    </div><!-- section -->
+
+    <!-- 메인 콘텐츠 요소 덩어리 한 그룹-->
+    <!-- 대용량 음료 -->
+    <div class="main-section-theme">
+      <div class="static">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>대용량 음료</strong>
+          </h3>
+        </div>
+        <div class="item-box default">
+          <ul class="item-img-list list-items">
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    칠성사이다(업소용) 500ML*20EA
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>18,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub08/01//201904301133012cc9aa869ef340fa856ec29a1f4d8e22_pbkb.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    환타(오렌지) 355ML BOX (24)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>17,700</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub08/01//2019043011243885e4841ed9724c7592d9040f07a5c89d_xfhn.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    포카리스웨트 240ML/동아오츠카(주) BOX (30)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>25,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/08/20/327//2021082013094013194a5969cd4b22984073ebb576eefd_ce3r.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    웰치스(포도) 355ML/농심 SBOX (24)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>18,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2022/11/22/565//20221122110915cde6a06ccff14ab7896dea019cbfb74c_ces5.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    펩시콜라(업소용) 500MLx20입
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>15,950</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub08/01//20190430113252b09ebff432154ec8a3e680bf36cfb4ea_sfik.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#"><span class="item-info-tit">
+                    킨사이다 1.5L BOX (12)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>29,500</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub08/01//2019043011192623d1f1fd7eba419a99e5a8b6885a38fd_r1rs.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    코카콜라(업소용) 190MLx30입/코카
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>15,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/02/06/103//202302061514406e4f5cf726244ec0822320f6fc44e06a_mufz.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    파워에이드(마운틴) 240ML SBOX (30)</span></a>
+                <div class="price">
+                  <strong>15,900</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub08/01//20190430112208744da1f4c039485da6bd2ef64f07f372_621b.jpg">
+                </div> <!-- //item -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div><!-- main-section-theme-->
+
+    <!-- 중간중간 들어가는 띠 배너 -->
+    <!-- 원두를 샀더니 커피머신이 공짜 -->
+    <div class="section">
+      <div class="main-section-bnr">
+        <img src="http://jangfood1.hgodo.com/shop/external/fix/IMG_BANNER/1204/20220315102830-435-54930b47a109.jpg">
+      </div>
+    </div><!-- section -->
+
+    <!-- 메인 콘텐츠 요소 덩어리 한 그룹-->
+    <!-- 대용량 과자 -->
+    <div class="main-section-theme">
+      <div class="static">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>대용량 과자</strong>
+          </h3>
+        </div>
+        <div class="item-box default">
+          <ul class="item-img-list list-items">
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    생강대롱 1KG/스위티코리아(주)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>3,400</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/07/23/767//202007231423408fd8b33b04d9403b8e41382bf20b5376_ggu8.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    스톤쵸코 600G/진미식품(주)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>3,400</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub10/01//20190430105517a21a20d56b584dbf89e400633431320f_m39g.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    라면왕 900G/조은
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>4,500</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/12/24/751//20201224164520af9d98c1dd4f416a81789404a509d532_889i.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    꿀맛땅콩 600G/진미식품(주)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>3,100</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/03/18/392//20200318151540cb513ccfb8b54084a6938d7cb0e03f1a_llji.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    보리건빵 2.5KG
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>9,800</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub10/01//201904301047058c34a13fb68a4bdeb0e7f6495bf5601f_ke1p.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#"><span class="item-info-tit">
+                    쵸코칩쿠키 1.8KG/㈜신흥제과
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>11,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2022/10/05/831//20221005112709a870805b04204ac79c1e9c4b8fb3ecc9_ivkr.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    떡볶이스낵 1KG/스위티코리아(주)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>7,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/09/25/198//202009251002254c113eca14f84b979c06f3a1b330cb5e_msbp.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    허니꿀꽈배기 1KG/삼천리</span></a>
+                <div class="price">
+                  <strong>2,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/12/24/962//20201224164310f1ea4c716d05494fb76f91a27a486400_qxfq.jpg">
+                </div> <!-- //item -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div><!-- main-section-theme-->
+
+    <!-- 중간중간 들어가는 띠 배너 -->
+    <!-- 페이 추가지급 이벤트 -->
+    <div class="section">
+      <div class="main-section-bnr">
+        <img src="http://jangfood1.hgodo.com/shop/external/fix/IMG_BANNER/770/20200730091041-dc5-81ff8c7d57cc.jpg">
+      </div>
+    </div><!-- section -->
+
+    <!-- 메인 콘텐츠 요소 덩어리 한 그룹-->
+    <!-- 대용량 농산물 -->
+    <div class="main-section-theme">
+      <div class="static">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>대용량 농산물</strong>
+          </h3>
+        </div>
+        <div class="item-box default">
+          <ul class="item-img-list list-items">
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    꼬부리콩나물 1BOX
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>4,800</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/07/20/528//20200720103240f2a02b495a08499292292fd7afc6470d_kzp4.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    감자(왕특) 5KG
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>14,800</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/02/02/777//20230202091820ca0c779c3f05491dbe10a163bfa53457_skm8.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    깻잎(밀양) 1BOX(25속)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>18,600</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/food/sub01//20190430113756746728ce0b244d279bdada2fd347db12_wbcr.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    브로컬리(경매) 8KG/국산
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>41,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/01/18/739//20230118102400595bbf702f7e4ccdaea87666f3d24887_feh1.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    반홍청양고추(경매) 10KG
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>32,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/04/19/025//20210419102950b6794c723bc542c99d17c9829667c3c8_n68a.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#"><span class="item-info-tit">
+                    세척당근 10KG/중국산
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>9,500</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/01/18/005//2023011810190023f48c6dce3642c79acaa2c11e590501_lvga.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    노랑파프리카A(경매) 5KG
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>28,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2023/01/18/357//20230118092700fd15580a9fa948c9b2ad097dd392aa51_rb9z.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    깐양파 5KG/국산
+                  </span></a>
+                <div class="price">
+                  <strong>10,700</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2020/02/24/787//202002240903154c60c9ceda3444039eec7ec45e5c6ec2_bvhh.jpg">
+                </div> <!-- //item -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div><!-- main-section-theme-->
+
+    <!-- 중간중간 들어가는 띠 배너 -->
+    <!-- 가입만 해도 할인쿠폰 -->
+    <div class="section">
+      <div class="main-section-bnr">
+        <img src="http://jangfood1.hgodo.com/shop/external/fix/IMG_BANNER/695/20200619161551-89b-def1cdc2739a.jpg">
+      </div>
+    </div><!-- section -->
+
+    <!-- 메인 콘텐츠 요소 덩어리 한 그룹-->
+    <!-- 축산/수산 -->
+    <div class="main-section-theme">
+      <div class="static">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>장보고 축산/수산</strong>
+          </h3>
+        </div>
+        <div class="item-box default">
+          <ul class="item-img-list list-items">
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    돈육돼지/앞다리살 100G/국산
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>1,100</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/02/19/869//202102191429103af8f7f7c60545c8963ce06c39e697af_eupt.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    돈육돼지/삼겹살(냉동) 1KG/오스트리아
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>11,900</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/04/19/098//202104191512100ad24a2d1c4c488ba5e90bb349fc34e3_5idu.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    우육전각/불고기(냉동) 1KG/호주
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>14,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/02/10/338//2021021013450022dee040cef04cfc9a71d4aca1d9ce37_wmh9.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    비비고닭곰탕 500G/씨제이제일제당(주)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>4,250</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/img/processed_food/sub07/01//20190430113048a3bb7a005a364710aa8fc25d4c877c79_5opp.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    엑셀(EXCEL)_냉동우빽립(#2) 27KG/미국
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>207,900</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2022/11/28/083//20221128085615caa9851696d546dc85a3db48abbbb394_gm3h.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#"><span class="item-info-tit">
+                    우육/삼겹양지(냉동) 500G/미국
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>9,950</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/02/25/134//20210225100700902e084556014da0a5b10b3b60c9d5e1_6kqd.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    돈육돼지/목심 100G/국산
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>7,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/02/19/939//2021021914254583bfa127bade45da9fba7416195e6788_5wsf.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    한우/채끝(1+등급) 100G/국산
+                  </span></a>
+                <div class="price">
+                  <strong>11,500</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/02/25/789//20210225093455e4b0ba56ff14461793a6ef93f0a88544_dzlj.jpg">
+                </div> <!-- //item -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div><!-- main-section-theme-->
+
+    <!-- 메인 콘텐츠 요소 덩어리 한 그룹-->
+    <!-- 분다버그 기획전 -->
+    <div class="main-section-theme">
+      <div class="static">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>분다버그 기획전</strong>
+          </h3>
+        </div>
+        <div class="item-box default">
+          <ul class="item-img-list list-items">
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그핑크그레이프푸르트자몽주스 375ML/㈜인터비엔에프
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>2,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/198//202111151656258f1dfa1500f44cdb9dec106abd011592_qf5d.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그트로피칼망고 375ML/㈜인터비엔에프
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>2,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/187//2021111516490038959fb597294c588f571154f3755f0f_luh9.jpg">
+                </div>
+              </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그진저비어 375ML/㈜인터비엔에프
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>2,300</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/117//202111151643459b8c32e345754f99934f1efa5767ae38_grl8.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그진저비어 375ML/㈜인터비엔에프 묶음 (4)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>8,900</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/331//20211115164440ba657c4a30644567a3be353239c1af67_egqc.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그진저비어 375ML/㈜인터비엔에프 BOX (12)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>26,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/429//202111151646201dc903398f444f49b866725a45264eae_6bfn.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#"><span class="item-info-tit">
+                    분다버그핑크그레이프푸르트자몽주스 375ML/㈜인터비엔에프 BOX (12)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>26,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/582//202111151700307e0c80acfdfa4975bb45701da9b23a9c_jviw.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그핑크그레이프푸르트자몽주스 375ML/㈜인터비엔에프 묶음 (4)
+                  </span>
+                </a>
+                <div class="price">
+                  <strong>8,900</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/221//202111151657105bcaf0f04db24251a8299eccf28c0fd6_vqfe.jpg">
+                </div> <!-- //item -->
+            </li>
+            <li class="list-item">
+              <div class="item-info">
+                <a href="#">
+                  <span class="item-info-tit">
+                    분다버그레몬라임앤비터스 375ML/㈜인터비엔에프
+                  </span></a>
+                <div class="price">
+                  <strong>2,000</strong>
+                  <span class="won">원</span>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="thumb">
+                  <img alt="상품이미지"
+                    src="http://jangfood1.hgodo.com/shop/external/fix/md/itemImg/2021/11/15/035//202111151652557658446772df43c987cc207a41cb0ca3_nfni.jpg">
+                </div> <!-- //item -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div><!-- main-section-theme-->
+
+    <!-- 장보고 레시피 -->
+    <div class="main-resp">
+      <div class="section">
+        <div class="theme-tit">
+          <h3 class="title">
+            <strong>장보고 레시피</strong>
+          </h3>
+        </div>
+        <div class="respSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="http://jangfood1.hgodo.com/shop/external/fix/IMG_EXHIB/2019/06/24/406//20190624160358-3d7-fda226f3dcd5.jpg"
+                  alt="">
+              </a>
+              <div class="name">
+                여름 디저트 :: 매그놀리아 바나나 푸딩 만들기
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-next">
+              <a href="#">
+                <img src="//www.jangboja.com/file//external/fix/IMG_EXHIB/recipe/362c70ae6dd301fe.jpg" alt="">
+              </a>
+              <div class="name">
+                시원하게 호로록~♬ 살얼음 동동 「냉우동」
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="//www.jangboja.com/file//external/fix/IMG_EXHIB/recipe/074d97b2adaa8504.jpg" alt="">
+              </a>
+              <div class="name">
+                시원한 복분자 참외 화채 :: 화채만들기
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 메인 하단 :: 장보고 매장 안내 -->
+    <div class="main-storeList">
+      <div class="section">
+        <div class="contLeft">
+          <div class="title">
+            <h2>장보고식자재마트 매장안내</h2>
+          </div>
+          <div class="store_list">
+            <ul>
+              <li><a href="#">본사</a></li>
+              <li><a href="#">농산물류센터</a></li>
+              <li><a href="#">고객배송센터</a></li>
+              <li><a href="#">종합물류센터</a></li>
+              <li><a href="#">이비즈사업부</a></li>
+              <li><a href="#">청과사업부</a></li>
+              <li><a href="#">축산사업부</a></li>
+              <li><a href="#">급식직거래사업부</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">부산신평점</a></li>
+              <li><a href="#">포항오천점</a></li>
+              <li><a href="#">울산옥동점</a></li>
+              <li><a href="#">구미인동점</a></li>
+              <li><a href="#">경산점</a></li>
+              <li><a href="#">영대점</a></li>
+              <li><a href="#">반야월점</a></li>
+              <li><a href="#">중방점</a></li>
+              <li><a href="#">칠곡점</a></li>
+              <li><a href="#">칠성점</a></li>
+              <li><a href="#">황금점</a></li>
+              <li><a href="#">상인점</a></li>
+              <li><a href="#">월배점</a></li>
+              <li><a href="#">진천점</a></li>
+              <li><a href="#">성서점</a></li>
+              <li><a href="#">감삼점</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contRight">
+          <div class="title">
+            <h2><a href="#">공지사항</a></h2>
+          </div>
+          <ul class="noticeList" id="noticeUl">
+
+            <li><a href="javascript:void(0)" class="tit">쿠폰 적용 방법</a><span class="date">2022-09-28</span></li>
+            <li><a href="javascript:void(0)" class="tit">배송방법에 따른 안내사항</a><span class="date">2021-02-04</span></li>
+            <li><a href="javascript:void(0)" class="tit">‘바로배송’ 이용방법</a><span class="date">2020-04-10</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 맨위로 가는 화살표 버튼 -->
+    <div class="go-to-top">
+      <a href="#">
+        <i class="fa-solid fa-arrow-up-long"></i>
+      </a>
+    </div>
+
+  </div><!-- container -->
+
+  <!-- footer -->
+  <footer class="jangboja_footer">
+    <div class="section">
+      <div class="footer">
+        <div class="footBox">
+          <div class="footerMenu">
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li class="privacy"><a href="#">개인정보취급방침</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </div>
+          <div class="sns-link">
+            <ul>
+              <li><a href="#" class="facebook" target="_blank">
+                  <span class="blind">페북</span></a>
+              </li>
+              <li><a href="#" class="insta" target="_blank">
+                  <span class="blind">인스타</span></a>
+              </li>
+              <li><a href="#" class="youtube" target="_blank">
+                  <span class="blind">유튜브</span></a>
+              </li>
+              <li><a href="#" class="blog" target="_blank">
+                  <span class="blind">블로그</span></a>
+              </li>
+              <li><a href="#" class="kakaoch" target="_blank">
+                  <span class="blind">카카오</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-company">
+          <div class="company_info">
+            <div class="company-title">
+              <strong>(주)장보고식자재마트</strong>
+            </div>
+            <ul class="company-content">
+              <li>
+                <span>대표 : 서정권</span>
+              </li>
+              <li>
+                <span>주소 : 대구 북구 칠곡중앙대로 21 (팔달동)</span>
+              </li>
+              <li>
+                <span>사업자 등록번호 : 514-81-56749</span>
+                <a href="#">
+                  사업자 정보확인
+                </a>
+              </li>
+              <li>
+                <span>통신판매업 신고번호 : 2012-대구북구-0302</span>
+              </li>
+              <li>
+                <span>개인정보관리자 : 이용원 jangbogofood@naver.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs-info">
+          <strong>
+            <a href="#">고객센터</a>
+          </strong>
+          <div class="box_cs">
+            <div class="number">1544-4490</div>
+            <dl class="open">
+              <dt>운영시간 :</dt>
+              <dd>평일 10:00 ~ 12:00 / 13:30 ~ 16:00</dd>
+            </dl>
+            <div class="closed">토, 일, 공휴일 휴무</div>
+            <div class="buttons">
+              <a href="#">자주하는 질문</a>
+              <a href="#">1:1문의</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-notice">
+          <dl>
+            <dt>안심거래 서비스 가맹점</dt>
+            <dd>
+              <a href="#" target="_blank">KICC 에스크로 서비스 가입사실 확인</a>
+            </dd>
+          </dl>
+          <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</p>
+        </div>
+
+        <p class="copyright">
+          &copy;JangbogoFoodMart Co, LTD. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    var _NGUL = "wcs.naver.net/wcslog.js";
+    var _NPR = location.protocol == "https:" ? "https://" + _NGUL : "http://" + _NGUL;
+    document.writeln("<scr" + "ipt type='text/ja" + "vascript' src='" + _NPR + "'></scr" + "ipt>");
+  </script>
+  <script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+
+  </footer>
+  <!-- footer -->
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- 메인슬라이드 불러오는 스크립트-->
+<script>
+  $(".slider").bxSlider();
+</script>
+<!-- 메인슬라이드 하단 버튼에 번호 바꾸는 스크립트 -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.slider');
+    const slideItems = slider.querySelectorAll('div');
+    const slideBottomBtn = document.querySelector('.slide_bottom_btn span');
+
+    const totalSlides = slideItems.length - 2;
+    let currentSlideIndex = 1;
+
+    const updateSlideInfo = () => {
+      slideBottomBtn.textContent = `${currentSlideIndex} / ${totalSlides}`;
+    };
+
+    const prevButton = document.querySelector('.bx-prev');
+    const nextButton = document.querySelector('.bx-next');
+
+    prevButton.addEventListener('click', () => {
+      if (currentSlideIndex > 1) {
+        currentSlideIndex--;
+      } else {
+        currentSlideIndex = totalSlides;
+      }
+      updateSlideInfo();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+      if (currentSlideIndex === 0) {
+        currentSlideIndex = totalSlides;
+      }
+      updateSlideInfo();
+    });
+
+    updateSlideInfo();
+  });
+</script>
