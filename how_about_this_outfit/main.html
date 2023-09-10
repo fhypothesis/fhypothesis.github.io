@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이옷어때? :: 날씨에 맞는 옷차림을 알려드려요</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="top-nav">
+      <div class="top-nav-wrap">
+        <div class="top-logo">
+          <a href="#sectionFir">이옷어때?</a>
+        </div>
+        <div>
+          <ul class="main-nav">
+            <li><a href="#sectionFir">이옷어때?</a></li>
+            <li><a href="#sectionSec">날씨정보</a></li>
+            <li><a href="#sectionThi">기온별 옷차림</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div id="sectionFir" class="section-1-form">
+        <div class="sec-1-tit txt-tit-sty">
+          <div class="sec-tit-fir">원하는 날짜와 지역을 입력하시면</div>
+          <div>날씨에 맞는 옷차림을 알려 드릴게요.</div>
+        </div>
+        <div class="input-form-box">
+          <form method="POST" action="/" class="form-box">
+            <div class="input-box">
+              <div class="input-box-in">
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  required
+                  placeholder="원하는 지역을 입력해 주세요. 예: 대구"
+                  class="input-box-sty"
+                />
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="input-box-in">
+                <div class="date-input">
+                  <input
+                    type="date"
+                    name="date"
+                    id="text"
+                    required
+                    class="input-box-sty"
+                    min="2023-10-26"
+                    max="2023-10-28"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="submit-Btn-box">
+              <div class="submit-Btn-box-in">
+                <input type="submit" value="전송하기" class="submit-Btn-sty" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="sectionSec" class="section-2">
+        <video autoplay muted loop id="video-background">
+          <source
+            src="./images/bg/clouds_-_106963 (1080p).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="section-2-wrapper">
+          <div class="date-weather-box txt-tit-thin">
+            <li>2023년 10월 26일</li>
+            <li>대구광역시 날씨</li>
+          </div>
+          <div class="temperature-sty">25°C</div>
+          <div class="date-weather-box txt-tit-thin">
+            <li>대체로 맑음</li>
+            <li>최고: 30°C 최저: 18°C</li>
+          </div>
+        </div>
+      </div>
+
+      <div id="sectionThi" class="section-3">
+        <div class="sec-3-tit txt-tit-sty">
+          <div class="sec-tit-fir">이런 옷차림 어때요?</div>
+          <div>
+            <ul>
+              <li>반팔,</li>
+              <li>얇은 셔츠,</li>
+              <li>반바지,</li>
+              <li>면바지</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sec-3-cir-sumnails">
+          <div class="cir-img-box">
+            <img src="./images/icons/ico_shirt.png" alt="웃옷" />
+          </div>
+          <div class="cir-img-box">
+            <img src="./images/icons/ico_shirt.png" alt="윗옷" />
+          </div>
+          <div class="cir-img-box">
+            <img src="./images/icons/ico_shirt.png" alt="하의" />
+          </div>
+          <div class="cir-img-box">
+            <img src="./images/icons/ico_shirt.png" alt="악세서리" />
+          </div>
+        </div>
+
+        <div class="sec-shop-link">
+          <div class="txt-tit-sty">추천 스타일</div>
+          <div class="swiper-wrapper">
+            <div class="swiper-wrap-again">
+              <div class="swiper-container">
+                <!-- 첫번째 슬라이드 -->
+                <div class="swiper-slide">
+                  <!-- img-box-01 -->
+                  <div class="sec-shop-link-sum">
+                    <div class="round-rec-img-box">
+                      <img
+                        src="./images/img_recommend/shop_sums_1.png"
+                        alt="달트 쇼핑몰의 케이시 스커트 제품"
+                      />
+                    </div>
+                    <div class="product-recommend-info-box">
+                      <h3 class="product-name">[DOLTTI] 케이시 스커트</h3>
+                      <div>
+                        <div>
+                          <div class="discount-rate">
+                            <span class="discount-rate-tex">30%</span>
+                            <span class="sales-price">10,710원</span>
+                          </div>
+                          <div class="dimmed-price">
+                            <span class="dimmed-price-tex">15,300원</span>
+                          </div>
+                          <div class="review-count">
+                            <div class="hash-tag-sty">
+                              #모던시크 #심플베이직
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="shop-link-Btn-sty">
+                        <a href="https://daltt.co.kr/" target="_blank"
+                          >구매하러 가기 GO!</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- img-box-02 -->
+                  <div class="sec-shop-link-sum">
+                    <div class="round-rec-img-box">
+                      <img
+                        src="./images/img_recommend/shop_sum_02.png"
+                        alt="저스트온 히브 메탈장식 7부 맨투맨티"
+                      />
+                    </div>
+                    <div class="product-recommend-info-box">
+                      <h3 class="product-name">[JUSTONE] 케이시 스커트</h3>
+                      <div>
+                        <div>
+                          <div class="discount-rate">
+                            <span class="discount-rate-tex">30%</span>
+                            <span class="sales-price">10,710원</span>
+                          </div>
+                          <div class="dimmed-price">
+                            <span class="dimmed-price-tex">15,300원</span>
+                          </div>
+                          <div class="review-count">
+                            <div class="hash-tag-sty">
+                              #러블리 #유니크 #심플베이직
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="shop-link-Btn-sty">
+                        <a
+                          href="https://www.justone.co.kr/shop/shopdetail.html?branduid=86619&xcode=035&mcode=000&scode=&GfDT=bmh3Vw%3D%3D"
+                          target="_blank"
+                          >구매하러 가기 GO!</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- img-box-03 -->
+                  <div class="sec-shop-link-sum">
+                    <div class="round-rec-img-box">
+                      <img
+                        src="./images/img_recommend/shop_sum_03.png"
+                        alt="샌더 9부 오버핏 셔츠"
+                      />
+                    </div>
+                    <div class="product-recommend-info-box">
+                      <h3 class="product-name">
+                        [MAYBLUE] 샌더 9부 오버핏 셔츠
+                      </h3>
+                      <div>
+                        <div>
+                          <div class="discount-rate">
+                            <span class="discount-rate-tex">30%</span>
+                            <span class="sales-price">10,710원</span>
+                          </div>
+                          <div class="dimmed-price">
+                            <span class="dimmed-price-tex">15,300원</span>
+                          </div>
+                          <div class="review-count">
+                            <div class="hash-tag-sty">#러블리 #모던 #시크</div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="shop-link-Btn-sty">
+                        <a
+                          href="https://mayblue.co.kr/shop/shopdetail.html?branduid=179986&xcode=099&mcode=002&scode=&special=1&GfDT=Z2V8Vg%3D%3D"
+                          target="_blank"
+                          >구매하러 가기 GO!</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 두번째 슬라이드 -->
+                <div class="swiper-slide">
+                  <!-- img-box-01 -->
+                  <div class="sec-shop-link-sum">
+                    <div class="round-rec-img-box">
+                      <img
+                        src="./images/img_recommend/shop_sum_04.png"
+                        alt="MISSHOP 피오니 블라우스 자켓"
+                      />
+                    </div>
+                    <div class="product-recommend-info-box">
+                      <h3 class="product-name">
+                        [MISSHOP] 피오니 블라우스 자켓
+                      </h3>
+                      <div>
+                        <div>
+                          <div class="discount-rate">
+                            <span class="discount-rate-tex">30%</span>
+                            <span class="sales-price">10,710원</span>
+                          </div>
+                          <div class="dimmed-price">
+                            <span class="dimmed-price-tex">15,300원</span>
+                          </div>
+                          <div class="review-count">
+                            <div class="hash-tag-sty">
+                              #페미닌 #심플 #베이직
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="shop-link-Btn-sty">
+                        <a
+                          href="https://www.minsshop.com/product/%EB%A9%B4100%ED%94%BC%EC%98%A4%EB%8B%88-%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4-%EC%9E%90%EC%BC%93/19673/category/1/display/4/"
+                          target="_blank"
+                          >구매하러 가기 GO!</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- img-box-02 -->
+                  <div class="sec-shop-link-sum">
+                    <div class="round-rec-img-box">
+                      <img
+                        src="./images/img_recommend/shop_sum_05.png"
+                        alt="COCOBLACK 마스 니트vest"
+                      />
+                    </div>
+                    <div class="product-recommend-info-box">
+                      <h3 class="product-name">[COCOBLACK] 마스 니트vest</h3>
+                      <div>
+                        <div>
+                          <div class="discount-rate">
+                            <span class="discount-rate-tex">30%</span>
+                            <span class="sales-price">10,710원</span>
+                          </div>
+                          <div class="dimmed-price">
+                            <span class="dimmed-price-tex">15,300원</span>
+                          </div>
+                          <div class="review-count">
+                            <div class="hash-tag-sty">
+                              #럭셔리 #명품 #미시스타일
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="shop-link-Btn-sty">
+                        <a
+                          href="https://cocoblack.kr/shop/shopdetail.html?branduid=180424&xcode=014&mcode=004&scode=&special=5&GfDT=bmx1W18%3D"
+                          target="_blank"
+                          >구매하러 가기 GO!</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- img-box-03 -->
+                  <div class="sec-shop-link-sum">
+                    <div class="round-rec-img-box">
+                      <img
+                        src="./images/img_recommend/shop_sum_06.png"
+                        alt="지앤패치 비스코스골지니트"
+                      />
+                    </div>
+                    <div class="product-recommend-info-box">
+                      <h3 class="product-name">
+                        [CLICK&FUNNY] 지앤패치 골지니트
+                      </h3>
+                      <div>
+                        <div>
+                          <div class="discount-rate">
+                            <span class="discount-rate-tex">30%</span>
+                            <span class="sales-price">10,710원</span>
+                          </div>
+                          <div class="dimmed-price">
+                            <span class="dimmed-price-tex">15,300원</span>
+                          </div>
+                          <div class="review-count">
+                            <div class="hash-tag-sty">
+                              #러블리 #심플 #베이직
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="shop-link-Btn-sty">
+                        <a
+                          href="https://www.clicknfunny.com/shop/shopdetail.html?branduid=71228&xcode=016&mcode=001&scode=&special=6&GfDT=a2x3Uw%3D%3D"
+                          target="_blank"
+                          >구매하러 가기 GO!</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="swiper-button-prev"
+              onclick="prevSlide()"
+            ></button>
+            <button
+              type="button"
+              class="swiper-button-next"
+              onclick="nextSlide()"
+            ></button>
+          </div>
+          <!-- swiper-wrapper -->
+        </div>
+        <!-- sec-shop-link -->
+      </div>
+      <!-- section-3 -->
+    </div>
+    <!-- main-content -->
+
+    <footer class="www-footer">
+      <p>&copy;KB-Team Double-U All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="swiper.js"></script>
+    <script src="smooth-scroll.js"></script>
+  </body>
+</html>
