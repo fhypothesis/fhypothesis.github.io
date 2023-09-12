@@ -1,4 +1,16 @@
 # About this work...<br>
+
+<style>
+   body {
+      line-height: 140%;
+      letter-spacing: -2px;
+      #1b1b1b
+   }
+   a {
+      #fa622f;
+   }
+</style>
+
 <br>
 안녕하세요. 디자이너&퍼블리셔 홍지현입니다.<br>
 이 저장소는 2023년 7월부터 수행한 퍼블리싱 작업을 모아둔 포트폴리오입니다.<br>
@@ -15,7 +27,7 @@
    회원가입, 로그인, 공지사항, 서브 페이지 등 다양한 형태의 페이지를 카피했습니다.<br>
    팝업창을 만들어 보고 싶어서,<br>
    회원가입 페이지에 다음 주소 API를 사용해 주소를 검색할 수 있는 팝업 창과<br>
-   이용약관을 확인 할 수 있는 모달창을 달아보았습니다,<br>
+   이용약관을 확인 할 수 있는 모달창을 달아보았습니다.<br>
 
    <b>
       <a href="https://fhypothesis.github.io/kurly/main.html" target="_blank">
