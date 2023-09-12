@@ -33,6 +33,14 @@ a {
   color: var(--text-color-dark-grey);
 }
 
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.add-info-rover-Btn svg {
+  cursor: pointer;
+}
+
 /* 텍스트 스타일 */
 
 .txt-tit-sty {
@@ -204,15 +212,47 @@ a {
   margin-bottom: 16px;
 }
 
-.temperature-sty {
+.temper-space-wrap {
+  position: relative;
+}
+
+.temper-space {
+  display: flex;
+  justify-content: center;
   margin-top: 47px;
   margin-bottom: 47px;
+}
+
+.temperature-sty {
+  position: relative;
   font-size: 80px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
   letter-spacing: -5px;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.temper-info-text {
+  display: none;
+  position: absolute;
+  margin-left: 15px;
+  top: 2px;
+  width: 160px;
+}
+
+.tem-info-sty {
+  background: var(--bg-white);
+  padding: 15px;
+  border: 1px solid var(--text-color-dark-grey);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: var(--text-color-dark-grey);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 140%;
+  letter-spacing: -1px;
 }
 
 .section-3 {
@@ -420,7 +460,7 @@ a {
   outline: none;
   width: 60px;
   height: 60px;
-  background: url(./images/icons/nextpre-Btn.svg) center center no-repeat;
+  background: url(/images/icons/nextpre-Btn.svg) center center no-repeat;
   top: 250px;
   left: 0;
   transform: translateX(-50%) translateY(-50%);
@@ -433,7 +473,7 @@ a {
   outline: 0px;
   width: 60px;
   height: 60px;
-  background: url(./images/icons/nextpre-Btn.svg) no-repeat;
+  background: url(/images/icons/nextpre-Btn.svg) no-repeat;
   top: 250px;
   right: 0px;
   transform: translate(50%, -50%) rotate(180deg);
