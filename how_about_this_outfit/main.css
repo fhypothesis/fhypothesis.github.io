@@ -479,11 +479,7 @@ input[type="submit"] {
   transform: translate(50%, -50%) rotate(180deg);
 }
 
-@media all and (max-width: 900px) {
-  body {
-    width: 100%;
-  }
-
+@media all and (max-width: 1024px) {
   .section-2 {
     width: 1024px;
   }
