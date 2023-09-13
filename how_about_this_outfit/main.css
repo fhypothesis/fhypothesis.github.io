@@ -478,3 +478,21 @@ input[type="submit"] {
   right: 0px;
   transform: translate(50%, -50%) rotate(180deg);
 }
+
+@media all and (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+
+  .section-2 {
+    width: 1024px;
+  }
+
+  #video-background {
+    width: 1024px;
+  }
+
+  .www-footer {
+    width: 1024px;
+  }
+}
