@@ -1221,3 +1221,13 @@ img.menu-logo {
   height: 30px;
   margin-right: 10px;
 }
+
+@media all and (max-width: 1050px) {
+  .swiper-place {
+    width: 1050px;
+  }
+
+  .kurly-footer {
+    width: 1050px;
+  }
+}
