@@ -41,6 +41,24 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+#bottom-talk-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+
+  z-index: 9999;
+}
+
+.talk-Btn {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: url(./images/icons/navertalk.png) no-repeat 0 0px;
+  background-size: 100%;
+}
+
 /* 텍스트 스타일 */
 
 .txt-tit-sty {
